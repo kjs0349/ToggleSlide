@@ -2,6 +2,8 @@
 
 토글 슬라이드 애니메이션을 만들어 보았습니다.
 
+![ToggleSlide](https://user-images.githubusercontent.com/61913417/110738833-54c55300-8273-11eb-8387-df851aa6a576.gif)
+
 #### 구현 과정
 1. 체크박스와 label을 연결!
 2. 체크박스에 display: none; 를 주어 모습을 없애주고 label에 text-indent: -9999px; 를 주어 글씨도 없는 형태로 만들어 주었다.
@@ -10,13 +12,13 @@
 5.
 	#toggle-slide:checked + label {
     	opacity: 1;
-	}
+	}  
 값을 이용해 체크 되었을 시 진하게 만들어 주었다.
 
 
 6. 
-		#toggle-slide:checked + label::after {
+	#toggle-slide:checked + label::after {
     	top: 5px;
     	left: 75px;
-    	}
+    	}  
 값을 이용해 위치를 변경시켜 주었다.
